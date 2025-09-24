@@ -1,0 +1,119 @@
+@keyframes fadeSlideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes logoPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+.header {
+    position: relative;
+    z-index: 20;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.header_logo a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    position: relative;
+    transition: color 0.3s ease;
+    animation: logoPulse 3s ease-in-out infinite;
+}
+
+.header_logo a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.header_logo a:hover {
+    color: #ffd700;
+}
+
+.header_logo a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.header_nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-left: 2rem;
+    position: relative;
+    padding-bottom: 2px;
+    transition: color 0.3s ease;
+}
+
+.header_nav a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ffd700;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.header_nav a:hover {
+    color: #ffd700;
+}
+
+.header_nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Responsividade simples */
+@media (max-width: 768px) {
+    .header_container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .header_nav a {
+        margin-left: 0;
+    }
+}
