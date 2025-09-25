@@ -4,6 +4,7 @@ import { Artigo } from '@/app/types/type'
 export const artigos: Artigo[] = [
     {
         id: 1,
+        slug: "guia-completo-do-next",
         title: "Guia Completo do Next.js App Router",
         author: "Jonatas Miranda",
         publishedAt: "2025-09-01T10:00:00.000Z",
@@ -13,6 +14,7 @@ export const artigos: Artigo[] = [
     },
     {
         id: 2,
+        slug: "seo-no-next",
         title: "SEO no Next.js: Passo a Passo",
         author: "Maria Souza",
         publishedAt: "2025-09-05T09:00:00.000Z",
@@ -22,6 +24,7 @@ export const artigos: Artigo[] = [
     },
     {
         id: 3,
+        slug: "ssg-vs-ssr",
         title: "SSG vs SSR: Quando usar cada um",
         author: "Carlos Lima",
         publishedAt: "2025-09-10T15:30:00.000Z",
@@ -31,6 +34,7 @@ export const artigos: Artigo[] = [
     },
     {
         id: 4,
+        slug: "melhores-praticas-com-json-local",
         title: "Melhores Práticas com JSON Local",
         author: "Ana Paula",
         publishedAt: "2025-09-12T14:00:00.000Z",
@@ -40,6 +44,7 @@ export const artigos: Artigo[] = [
     },
     {
         id: 5,
+        slug: "deploy-no-vercel",
         title: "Deploy no Vercel: Guia Rápido",
         author: "João Pedro",
         publishedAt: "2025-09-15T11:00:00.000Z",

@@ -3,6 +3,7 @@ import { Artigo } from '@/app/types/type'
 export const artigosDeploy: Artigo[] = [
     {
         id: 6,
+        slug: "deploy-no-netlify",
         title: "Deploy no Netlify: Passo a Passo",
         author: "Fernanda Alves",
         publishedAt: "2025-09-20T09:30:00.000Z",
@@ -13,6 +14,7 @@ export const artigosDeploy: Artigo[] = [
     },
     {
         id: 7,
+        slug: "checklist-de-deploy",
         title: "Checklist de Deploy: O Que Verificar Antes de Publicar",
         author: "Lucas Ferreira",
         publishedAt: "2025-09-21T13:15:00.000Z",
@@ -24,6 +26,7 @@ export const artigosDeploy: Artigo[] = [
     },
     {
         id: 8,
+        slug: "automatizando-seu-fluxo-de-deploy",
         title: "CI/CD: Automatizando seu Fluxo de Deploy",
         author: "Beatriz Silva",
         publishedAt: "2025-09-22T16:00:00.000Z",

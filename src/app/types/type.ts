@@ -1,5 +1,6 @@
 export interface Artigo {
-    id: number
+    id: number;
+    slug: string;
     title: string;
     author : string;
     publishedAt: string;
