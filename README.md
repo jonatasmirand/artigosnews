@@ -1,36 +1,105 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📚 ArtigosNews
 
-## Getting Started
+ArtigosNews é uma aplicação desenvolvida com **Next.js** e **TypeScript** para listar, visualizar e explorar artigos criados manualmente no projeto.  
+O objetivo é servir como um portal simples de notícias/artigos, com interface responsiva e organizada em **cards**.
 
-First, run the development server:
 
-```bash
+
+## 🧱 Estrutura do Projeto
+
+src/
+├── app/
+│ ├── artigos/ # Rotas dinâmicas para cada artigo
+│ │ └── [slug]/page.tsx # Página de detalhes do artigo
+│ ├── components/ # Componentes reutilizáveis (Header, Footer, Grid, Card, Title)
+│ ├── types/ # Tipos (TypeScript)
+│ ├── globals.css # Estilos globais
+│ └── layout.tsx # Layout raiz (com Header e Footer)
+├── public/ # Imagens usadas nos artigos
+
+markdown
+Copiar código
+
+---
+
+## ✨ Funcionalidades
+
+✅ **Listagem de artigos** em grade  
+✅ **Página de detalhes** com título, imagem, resumo e conteúdo  
+✅ **Roteamento dinâmico** usando App Router do Next.js  
+✅ **Botão de voltar** para retornar à lista principal  
+✅ **Responsividade** para desktop, tablet e mobile  
+✅ **Componentização** (Card, Grid, Title, Header, Footer)  
+✅ **Estilização com CSS Modules**
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+- [Next.js 15](https://nextjs.org/) — App Router + rotas dinâmicas
+- [React 18](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [CSS Modules](https://nextjs.org/docs/pages/building-your-application/styling/css-modules)
+- [Google Fonts](https://fonts.google.com/) (Fjalla One)
+- **Static Site Generation** com `generateStaticParams` e `generateMetadata`
+
+---
+
+## 🚀 Como Rodar Localmente
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/jonatasmirand/artigosnews
+   cd artigosnews
+Instale as dependências
+
+bash
+Copiar código
+npm install
+# ou
+yarn
+Rode o servidor de desenvolvimento
+
+bash
+Copiar código
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Acesse no navegador
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+arduino
+Copiar código
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📦 Scripts Disponíveis
+Script	Descrição
+dev	Inicia o servidor de desenvolvimento
+build	Gera a versão de produção
+start	Inicia o app em modo produção
+lint	Executa o linter (se configurado)
 
-## Learn More
+📸 Componentes Principais
+Card → Renderiza cada artigo (imagem, título, autor, data, resumo)
 
-To learn more about Next.js, take a look at the following resources:
+Grid → Layout em grid para listar os artigos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Title → Título centralizado das seções
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Header / Footer → Cabeçalho e rodapé fixos
 
-## Deploy on Vercel
+DetailsArtigo → Página de detalhe de cada artigo, com generateMetadata para SEO
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🌐 Deploy
+Pode ser facilmente publicado na Vercel (plataforma oficial do Next.js):
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy automático a cada push no branch principal
+
+Suporte nativo a rotas dinâmicas e SSG
+
+📄 Licença
+Distribuído sob a licença MIT.
+Sinta-se livre para usar, modificar e compartilhar.
+
+👤 Autor
+Jonatas Miranda
+🔗 LinkedIn | www.linkedin.com/in/jonatasmirand
+💻 GitHub | https://github.com/jonatasmirand
