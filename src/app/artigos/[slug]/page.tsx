@@ -7,10 +7,17 @@ import { artigos } from "@/app/types/artigos";
 
 const AllArtigos = [...artigos, ...artigosDeploy];
 
+type DetailsPageProps = {
+    params: Promise<{
+        slug: string;
+    }>;
+};
+
 export async function generateMetadata(
-    { params }: { params: { slug: string } }
+    { params }: DetailsPageProps
 ): Promise<Metadata> {
-    const details = AllArtigos.find((artigo) => artigo.slug === params.slug);
+    const { slug } = await params;
+    const details = AllArtigos.find((artigo) => artigo.slug === slug);
     if (!details) return {};
     return {
         title: `${details.title} | ArtigosNews`,
@@ -24,13 +31,16 @@ export async function generateStaticParams() {
     }));
 }
 
-export default async function DetailsArtigo({ params }: { params: { slug: string } }) {
-    const details = AllArtigos.find((artigo) => artigo.slug === params.slug);
+
+export default async function DetailsArtigo({ params }: DetailsPageProps) {
+    const { slug } = await params;
+    const details = AllArtigos.find((artigo) => artigo.slug === slug);
     if (!details) return notFound();
 
     const { title, summary, content, author, publishedAt, image } = details;
 
     return (
+        
         <div className={styles.card}>
             <img src={image} alt={title} className={styles.cardImage} />
             <h2 className={styles.title}>{title}</h2>
@@ -48,5 +58,6 @@ export default async function DetailsArtigo({ params }: { params: { slug: string
                 ⬅ Voltar para lista
             </Link>
         </div>
+        
     );
 }

@@ -70,14 +70,16 @@ Copiar código
 http://localhost:3000
 
 
-📦 Scripts Disponíveis
+## 📦 Scripts Disponíveis
+
 Script	Descrição
 dev	Inicia o servidor de desenvolvimento
 build	Gera a versão de produção
 start	Inicia o app em modo produção
 lint	Executa o linter (se configurado)
 
-📸 Componentes Principais
+##  📸 Componentes Principais
+
 Card → Renderiza cada artigo (imagem, título, autor, data, resumo)
 
 Grid → Layout em grid para listar os artigos
@@ -88,18 +90,22 @@ Header / Footer → Cabeçalho e rodapé fixos
 
 DetailsArtigo → Página de detalhe de cada artigo, com generateMetadata para SEO
 
-🌐 Deploy
+## 🌐 Deploy
+
 Pode ser facilmente publicado na Vercel (plataforma oficial do Next.js):
 
 Deploy automático a cada push no branch principal
 
 Suporte nativo a rotas dinâmicas e SSG
 
-📄 Licença
+## 📄 Licença
+
 Distribuído sob a licença MIT.
 Sinta-se livre para usar, modificar e compartilhar.
 
-👤 Autor
-Jonatas Miranda
+## 👤 Autor
+
+### Jonatas Miranda
+
 🔗 LinkedIn | www.linkedin.com/in/jonatasmirand
 💻 GitHub | https://github.com/jonatasmirand

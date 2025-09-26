@@ -1,6 +1,13 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-image: url('/papel-de-parede.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #1a202c;
   margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  padding-top: 80px;
 }
 

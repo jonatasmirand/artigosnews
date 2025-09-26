@@ -1,11 +1,12 @@
-import Title from "./components/Title";
+
 import Grid from "./components/Grid";
+import Sobre from "./components/Sobre";
 import {artigos} from '@/app/types/artigos'
 
 export default function Home() {
   return (
   <>
-  <Title title="ArtigosNews"/>
+  <Sobre/>
   <Grid artigos={artigos}/>
   </>
   );
