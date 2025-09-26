@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: "Artigos News",
-  description: "Na Artigos News, você encontra os melhores artigos e informações publicados por alunos e aprendizado.",
+  description: "Na Artigos News, você encontra os melhores artigos e informações publicados por alunos para ajudar o seu aprendizado.",
 };
 
 export default function RootLayout({
