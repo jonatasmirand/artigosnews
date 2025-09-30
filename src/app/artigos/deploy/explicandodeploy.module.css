@@ -27,3 +27,48 @@
     font-weight: 600;
     color: #2d36e8;
 }
+
+@media (max-width: 1024px) {
+    .sobre {
+        padding: 3rem 2rem;
+        margin: 7rem 1rem 2rem 1rem;
+    }
+
+    .titulo {
+        font-size: 2.2rem;
+    }
+
+    .paragrafo {
+        font-size: 1.05rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        padding: 2rem;
+        margin: 9rem 0.5rem 2rem 0.5rem;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .paragrafo {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sobre {
+        padding: 2rem;
+        margin: 9rem 0.5rem 2rem 0.5rem;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .paragrafo {
+        font-size: 0.95rem;
+    }
+}

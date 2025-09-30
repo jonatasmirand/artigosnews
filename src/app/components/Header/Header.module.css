@@ -89,6 +89,6 @@
     .header_nav {
         flex-direction: column;
         gap: 0.8rem;
-        align-items: flex-start;
+        align-items: center;
     }
 }
