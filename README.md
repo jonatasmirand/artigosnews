@@ -1,6 +1,6 @@
 # 📚 ArtigosNews
 
-ArtigosNews é uma aplicação desenvolvida com **Next.js** e **TypeScript** para listar, visualizar e explorar artigos criados manualmente no projeto.  
+Artigos ficticios para fixar o aprendizado com **Next.js** e **TypeScript**, aqui conseguimos visualizar e explorar artigos criados manualmente no projeto.  
 O objetivo é servir como um portal simples de notícias/artigos, com interface responsiva e organizada em **cards**.
 
 
@@ -90,13 +90,7 @@ Header / Footer → Cabeçalho e rodapé fixos
 
 DetailsArtigo → Página de detalhe de cada artigo, com generateMetadata para SEO
 
-## 🌐 Deploy
 
-Pode ser facilmente publicado na Vercel (plataforma oficial do Next.js):
-
-Deploy automático a cada push no branch principal
-
-Suporte nativo a rotas dinâmicas e SSG
 
 ## 📄 Licença
 
